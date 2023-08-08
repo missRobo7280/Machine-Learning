@@ -1,4 +1,5 @@
 #numpy
+#https://numpy.org/doc/stable/reference/routines.array-creation.html
 
 import numpy as np
 # #we can check if the given array is a numpy array as in a normal list the elements are separated by commas unlike in np arrays
@@ -96,3 +97,11 @@ brr2=np.split(arr,1,axis=1)
 print(arr)
 print(brr)
 print(brr2)
+
+###to delete at a particular index position
+a=np.arange(1,17).reshape(4,4)
+print(a)
+b=np.delete(a,2,axis=0)#rowwise deletion
+b2=np.delete(a,2,axis=1)#columnwise deletion
+print(b)
+print(b2)
