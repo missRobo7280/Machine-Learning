@@ -44,3 +44,6 @@ model.fit(xtrain,ytrain)
 ypred=model.predict(xtest)
 #print(accuracy_score(ytest,ypred))
 acc=accuracy(ytest,ypred)
+
+#making the predictions
+print(model.predict([[5.3,2.8,1.9,0.1],[3.5,2.3,1.2,5.6],[34.6,67.5,32.1,90.3]]))
